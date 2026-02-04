@@ -10,7 +10,7 @@ import {
   UseGuards,
   ParseIntPipe,
 } from '@nestjs/common';
-import { CurrentUser } from 'src/common/decorators/current-user.decorator';
+import { CurrentUser } from '../common/decorators/current-user.decorator';
 import { BlogsService } from './blogs.service';
 import { CreateBlogDto } from './dto/create-blog';
 import { UpdateBlogDto } from './dto/update-blog';
