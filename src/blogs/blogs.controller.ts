@@ -39,11 +39,11 @@ export class BlogsController {
         status: 'success',
         message: 'Blog created successfully',
         data: {
-          id: 'abc123',
-          title: 'My First Blog',
-          content: 'This is the content of my first blog.',
-          authorId: 1,
-          createdAt: '2024-01-01T00:00:00.000Z',
+          id: 'blog_id',
+          title: 'blog_title',
+          content: 'blog_content',
+          authorId: 'blog_author_id',
+          createdAt: 'blog_creation_date',
         },
       },
     },
@@ -67,7 +67,6 @@ export class BlogsController {
   @Get()
   @ApiOperation({ summary: 'Get all blogs with pagination' })
   @ApiQuery({ name: 'page', required: false, example: 1 })
-  @ApiQuery({ name: 'limit', required: false, example: 10 })
   @ApiResponse({
     status: 200,
     schema: {
@@ -76,15 +75,25 @@ export class BlogsController {
         message: 'Blogs retrieved successfully',
         data: [
           {
-            id: 'abc123',
-            title: 'My First Blog',
-            content: 'This is the content of my first blog.',
+            id: 'blog_id_1',
+            title: 'blog_title_1',
+            content: 'blog_content_1',
             authorId: {
-              id: 1,
-              name: 'Mukti Abdi Syukur',
+              id: 'blog_author_id_1',
+              name: 'blog_author_name_1',
             },
-            createdAt: '2024-01-01T00:00:00.000Z',
+            createdAt: 'blog_creation_date_1',
           },
+          {
+            id: 'blog_id_2',
+            title: 'blog_title_2',
+            content: 'blog_content_2',
+            authorId: {
+              id: 'blog_author_id_2',
+              name: 'blog_author_name_2',
+            },
+            createdAt: 'blog_creation_date_2',
+          }
         ],
         meta: {
           page: 1,
@@ -119,15 +128,15 @@ export class BlogsController {
         status: 'success',
         message: 'Blog retrieved successfully',
         data: {
-          id: 'abc123',
-          title: 'My First Blog',
-          content: 'This is the content of my first blog.',
+          id: 'blog_id',
+          title: 'blog_title',
+          content: 'blog_content',
           authorId: {
-            id: 1,
-            name: 'Mukti Abdi Syukur',
-            email: 'muktiabdi@example.com',
+            id: 'blog_author_id',
+            name: 'blog_author_name',
+            email: 'blog_author_email@example.com',
           },
-          createdAt: '2024-01-01T00:00:00.000Z',
+          createdAt: 'blog_creation_date',
         },
       },
     },
@@ -154,9 +163,9 @@ export class BlogsController {
         status: 'success',
         message: 'Blog updated successfully',
         data: {
-          id: 'abc123',
-          title: 'My Updated Blog',
-          content: 'Updated content of the blog',
+          id: 'blog_id',
+          title: 'blog_title',
+          content: 'blog_content',
         },
       },
     },
