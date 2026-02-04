@@ -93,7 +93,7 @@ export class BlogsController {
               name: 'blog_author_name_2',
             },
             createdAt: 'blog_creation_date_2',
-          }
+          },
         ],
         meta: {
           page: 1,
