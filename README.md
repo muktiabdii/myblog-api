@@ -189,7 +189,6 @@ npm run start:dev
 {
   "status": "error",
   "message": "Clear error message",
-  "errors": null
 }
 ```
 
