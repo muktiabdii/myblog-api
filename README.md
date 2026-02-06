@@ -93,8 +93,6 @@ Struktur utama layer yang digunakan meliputi:
 5. **Sesuai Best Practice Backend Development**  
    Layered architecture merupakan pola umum yang digunakan pada sistem backend skala kecil hingga enterprise.
 
-Dengan penerapan arsitektur ini, MyBlog API memiliki struktur yang rapi, modular, dan siap dikembangkan lebih lanjut.
-
 ---
 
 ## 📂 Folder Structure
