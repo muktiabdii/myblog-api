@@ -6,6 +6,7 @@
 API ini mengelola dua resource utama, yaitu **User** dan **Blog**, yang saling terintegrasi dengan sistem keamanan berbasis **JWT Authentication**.
 Project ini dikembangkan sebagai bagian dari technical challenge program magang Backend Developer di **DOT Indonesia**.
 
+---
 
 ## 📌 Overview
 Fitur utama yang tersedia dalam API ini meliputi:
@@ -13,10 +14,12 @@ Fitur utama yang tersedia dalam API ini meliputi:
 * **Profile Management**: User dapat melihat, memperbarui, dan menghapus profil mereka sendiri.
 * **Blog Management**: Operasi CRUD (Create, Read, Update, Delete) lengkap untuk konten blog.
 
+---
 
 ## 👥 Actors
 * **User**: Pengguna terautentikasi yang memiliki hak akses penuh terhadap data miliknya sendiri.
 
+---
 
 ## ⚙️ Functional Requirements
 
@@ -36,6 +39,7 @@ Fitur utama yang tersedia dalam API ini meliputi:
 * User dapat memperbarui isi blog miliknya.
 * User dapat menghapus blog miliknya.
 
+---
 
 ## 🗄️ Data Requirements
 
@@ -44,6 +48,7 @@ Fitur utama yang tersedia dalam API ini meliputi:
 | **User** | `id`, `name`, `email`, `password`, `created_at`, `updated_at` |
 | **Blog** | `id`, `title`, `content`, `author_id`, `created_at`, `updated_at` |
 
+---
 
 ## 🚀 Tech Stack
 * **Framework**: NestJS (TypeScript) ⚡
@@ -53,6 +58,7 @@ Fitur utama yang tersedia dalam API ini meliputi:
 * **Documentation**: Swagger UI
 * **Testing**: Jest (e2e testing)
 
+---
 
 ## 📂 Folder Structure
 
@@ -96,6 +102,8 @@ src/
 └── main.ts
 ```
 
+---
+
 ## 🔐 Environment Variables
 
 Sebelum menjalankan aplikasi, buatlah file `.env` pada root directory dan masukkan konfigurasi berikut:
@@ -109,6 +117,7 @@ JWT_SECRET="your_jwt_secret_key_here"
 JWT_EXPIRATION_TIME="3600s"
 ```
 
+---
 
 ## 📥 Installation & Setup
 
@@ -147,6 +156,7 @@ Nyalakan server dalam mode pengembangan (watch mode):
 npm run start:dev
 ```
 
+---
 
 ## 📮 API Endpoints
 
@@ -172,6 +182,7 @@ npm run start:dev
 | `PATCH` | `/api/blogs/{id}` | Mengupdate blog (khusus milik sendiri) |
 | `DELETE` | `/api/blogs/{id}` | Menghapus blog (khusus milik sendiri) |
 
+---
 
 ## 📦 API Response Format
 
@@ -192,6 +203,7 @@ npm run start:dev
 }
 ```
 
+---
 
 ## 📖 Additional Info
 
@@ -202,6 +214,7 @@ npm run start:dev
     npm run test:e2e
     ```
 
+---
 
 ## 👤 Author
 
