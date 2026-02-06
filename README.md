@@ -60,6 +60,43 @@ Fitur utama yang tersedia dalam API ini meliputi:
 
 ---
 
+## 🧩 Architecture Pattern: Layered Architecture
+
+Project ini menerapkan **Layered Architecture Pattern** untuk memisahkan tanggung jawab setiap bagian sistem secara jelas dan terstruktur.  
+Pendekatan ini sangat selaras dengan konsep modular yang dimiliki oleh NestJS.
+
+Struktur utama layer yang digunakan meliputi:
+
+- **Controller Layer**  
+  Bertanggung jawab menerima HTTP request, melakukan validasi input, dan mengembalikan response ke client.
+
+- **Service Layer**  
+  Menangani business logic utama aplikasi seperti proses autentikasi, manipulasi data user, dan pengelolaan blog.
+
+- **Repository Layer**  
+  Berfungsi sebagai penghubung langsung ke database menggunakan Prisma ORM, sehingga akses data terisolasi dari logic bisnis.
+
+### ✅ Keunggulan Layered Architecture pada NestJS
+
+1. **Separation of Concerns (SoC)**  
+   Setiap layer memiliki tanggung jawab spesifik, membuat kode lebih bersih, mudah dipahami, dan terorganisir.
+
+2. **Scalability yang Lebih Baik**  
+   Struktur ini memudahkan pengembangan fitur baru tanpa memengaruhi bagian lain dari sistem.
+
+3. **Maintainability Tinggi**  
+   Perubahan pada database atau business logic dapat dilakukan tanpa mengubah controller secara langsung.
+
+4. **Mendukung Testing yang Lebih Mudah**  
+   Setiap layer dapat diuji secara terpisah (unit test & e2e test), sehingga meningkatkan kualitas aplikasi.
+
+5. **Sesuai Best Practice Backend Development**  
+   Layered architecture merupakan pola umum yang digunakan pada sistem backend skala kecil hingga enterprise.
+
+Dengan penerapan arsitektur ini, MyBlog API memiliki struktur yang rapi, modular, dan siap dikembangkan lebih lanjut.
+
+---
+
 ## 📂 Folder Structure
 
 ```text
